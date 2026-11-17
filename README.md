@@ -15,6 +15,22 @@ which ended in one offer that I accepted. This is the cleaned-up version, rebuil
 
 It finds jobs that match your rules, writes a CV for each one from facts you've confirmed, fills in the application once you approve it, and reads your inbox to see who replied. It never submits an application you haven't approved.
 
+## Let your AI agent set it up
+
+Paste this into Claude Code or Codex:
+
+```text
+Set up job-pipeline for me: https://github.com/JoschuaSuenneke/job-pipeline
+
+1. Install Bun if it's missing (https://bun.sh), clone the repo and run `bun install`.
+2. Read src/onboarding/init.ts to see the setup questions. Ask me them in plain language, a few at a time.
+3. Run `bun src/cli/index.ts init` with my answers piped in, one per line, then run `bun src/cli/index.ts doctor` and fix what it reports.
+4. Ask me for my CV file and run `bun src/cli/index.ts import-cv <path>`.
+5. Tell me to open Claude Code or Codex in ~/.job-pipeline and say "onboard me".
+
+Don't connect a mailbox, apply to any job or send anything during setup.
+```
+
 ## Try it
 
 ```bash

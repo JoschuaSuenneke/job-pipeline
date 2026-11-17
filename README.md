@@ -3,11 +3,6 @@
 <p align="center">A job search pipeline that Claude Code or Codex runs for you. You approve every application.</p>
 
 <p align="center">
-I built this for my own job search: about 260&nbsp;applications in 12&nbsp;days,<br>
-which ended in one offer that I accepted. This is the cleaned-up version, rebuilt so anyone can use it.
-</p>
-
-<p align="center">
   <img src="docs/assets/dashboard-light.png" alt="The job-pipeline dashboard for a fictional engineer in San Francisco: jobs ready for review, applications, response and interview rates" width="800">
 </p>
 

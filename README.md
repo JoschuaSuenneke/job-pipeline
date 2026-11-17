@@ -8,10 +8,7 @@ which ended in one offer that I accepted. This is the cleaned-up version, rebuil
 </p>
 
 <p align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/dashboard-dark.png">
-    <img src="docs/assets/dashboard-light.png" alt="The job-pipeline dashboard for a fictional engineer in San Francisco: jobs ready for review, applications, response and interview rates" width="800">
-  </picture>
+  <img src="docs/assets/dashboard-light.png" alt="The job-pipeline dashboard for a fictional engineer in San Francisco: jobs ready for review, applications, response and interview rates" width="800">
 </p>
 
 <p align="center"><sub>The demo: a fictional engineer searching in San Francisco. Every company is invented.</sub></p>

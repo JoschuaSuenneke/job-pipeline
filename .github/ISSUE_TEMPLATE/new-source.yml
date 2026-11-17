@@ -1,0 +1,27 @@
+name: New job source
+description: Suggest a job board or ATS to support
+labels: [source]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Source (name and URL)
+    validations:
+      required: true
+  - type: dropdown
+    id: access
+    attributes:
+      label: How can it be read?
+      options:
+        - Official public API
+        - Public feed (RSS/XML/JSON)
+        - Not sure
+    validations:
+      required: true
+  - type: input
+    id: countries
+    attributes:
+      label: Countries it covers
+  - type: markdown
+    attributes:
+      value: job-pipeline only ships sources with an official API or public feed. Sites whose terms forbid scraping are out of scope.

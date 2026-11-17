@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Job Pipeline</title>
+  <link rel="stylesheet" href="/styles.css">
+  <script type="module" src="/app.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <span class="mark" id="mark" aria-hidden="true">JP</span>
+      <b id="who">Job Pipeline</b>
+      <span class="sep">/</span>
+      <span class="sub">Application pipeline</span>
+    </div>
+    <nav class="views" aria-label="Views">
+      <button type="button" data-view="pipeline" aria-current="page">Pipeline</button>
+      <button type="button" data-view="inbox">Inbox</button>
+      <button type="button" data-view="activity">Activity</button>
+      <button type="button" data-view="settings">Settings</button>
+    </nav>
+  </header>
+  <main id="main" tabindex="-1">
+    <p class="muted loading">Loading…</p>
+  </main>
+  <dialog id="drawer" class="drawer" aria-labelledby="drawer-title"></dialog>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>

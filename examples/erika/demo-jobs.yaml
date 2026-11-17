@@ -1,0 +1,24 @@
+# Fictional jobs for `job-pipeline demo erika`. Companies and postings are invented.
+# path: the statuses a job went through. hoursAgo: when it was last touched.
+featured:
+  - { title: Product Owner Customer Portal, company: Northwind Logistics, location: Münster, path: [drafted], fit: 85, hoursAgo: 4, reasons: [title matches product owner, commutable],
+      cover: "Dear Northwind team,\n\nI run discovery and backlog work for a logistics product today…" }
+  - { title: Business Analyst Process Automation, company: Lindenhof Versicherung, location: "Köln (Hybrid)", workMode: hybrid, salaryMin: 62000, salaryMax: 74000, currency: EUR, path: [drafted], fit: 80, hoursAgo: 20, reasons: [title matches business analyst, 2 office days ok] }
+  - { title: Product Manager Onboarding, company: Brightdesk, location: "Remote (Germany)", workMode: remote, path: [drafted], fit: 78, hoursAgo: 50, reasons: [title matches product manager, remote] }
+  - { title: Customer Success Manager, company: Kaleo Software, location: "Remote (EU)", workMode: remote, path: [], fit: 72, hoursAgo: 6, reasons: [title matches customer success manager, remote] }
+  - { title: Digital Product Manager, company: Stadtwerke Beispielstadt, location: Osnabrück, path: [], fit: 70, hoursAgo: 7, reasons: [title matches product manager, commutable] }
+  - { title: Product Owner Mobile App, company: Velora Health, location: "Düsseldorf (Hybrid)", workMode: hybrid, path: [drafted, approved, applied], fit: 82, hoursAgo: 30, reasons: [title matches product owner] }
+  - { title: Product Manager Integrations, company: Quellwerk, location: "Remote (Germany)", workMode: remote, path: [drafted, approved, applied, interview], fit: 88, hoursAgo: 28, reasons: [title matches product manager] }
+  - { title: Business Analyst Payments, company: Alder Pay, location: "Berlin (Remote)", workMode: remote, path: [drafted, approved, applied, conversation], fit: 74, hoursAgo: 60, reasons: [title matches business analyst] }
+  - { title: Product Analyst, company: Moorland Media, location: Hamburg, path: [drafted, approved, applied, rejected], fit: 64, hoursAgo: 80, reasons: [description mentions product discovery] }
+  - { title: Senior Product Manager, company: Ironbridge, location: "Remote (Germany)", workMode: remote, path: [parked], fit: 0, hoursAgo: 90, reasons: [], note: senior title }
+  - { title: SAP Business Analyst, company: Grauwerk, location: Münster, path: [dropped], fit: 0, hoursAgo: 92, reasons: [], note: "title excluded by pattern \\bSAP\\b" }
+
+bulk:
+  companies: [Feldmark AG, Hanse Retail Group, Kestrel Systems, Ostwind Energie, Lindgrün, Möwe Mobility, Sternwerk, Tannhaus, Uferlicht, Weidenhof]
+  titles: [Product Owner, Business Analyst, Product Manager]
+  places:
+    - { location: Münster, workMode: onsite }
+    - { location: "Remote (Germany)", workMode: remote }
+    - { location: "Köln (Hybrid)", workMode: hybrid }
+  counts: { new: 4, applied: 12, rejected: 5 }

@@ -1,0 +1,71 @@
+# Every claim in a CV, cover note or form answer must trace to a confirmed fact.
+# Experience entries: one "header" fact ("Title | Organisation | Period | Location") plus one fact per bullet.
+- id: ledger-header
+  section: experience
+  entry: ledger
+  text: Software Engineer II | Ledgerly Inc. | 03/2022 – today | San Francisco
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: ledger-payments
+  section: experience
+  entry: ledger
+  text: Built the payouts service in TypeScript and Postgres that moves $40M a month for 3,000 merchants
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [backend engineer, software engineer, typescript, distributed systems]
+- id: ledger-latency
+  section: experience
+  entry: ledger
+  text: Cut p95 API latency from 480 ms to 120 ms by moving reconciliation to a queue with idempotent workers
+  source: user:2026-11-17
+  confirmed: true
+  tags: [backend engineer, platform engineer, distributed systems]
+- id: ledger-oncall
+  section: experience
+  entry: ledger
+  text: Led the on-call rotation for a team of 7 and wrote the runbooks that halved time to resolve incidents
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [platform engineer, software engineer]
+- id: tidal-header
+  section: experience
+  entry: tidal
+  text: Software Engineer | Tidal Forms | 07/2019 – 02/2022 | Oakland
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: tidal-sdk
+  section: experience
+  entry: tidal
+  text: Shipped a React form-builder SDK used by 400 customer teams, with 98% test coverage
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [full stack engineer, developer tools, typescript]
+- id: tidal-migration
+  section: experience
+  entry: tidal
+  text: Migrated 60 services from Heroku to AWS ECS with Terraform without customer-facing downtime
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [platform engineer, backend engineer]
+- id: edu-ucsc
+  section: education
+  entry: ucsc
+  text: B.S. Computer Science | UC Santa Cruz | 2015 – 2019
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: skills-core
+  section: skill
+  text: TypeScript, Node.js, Go, Postgres, Kafka, AWS, Terraform, React
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [software engineer, backend engineer, full stack engineer, platform engineer]
+- id: ledger-hiring
+  section: experience
+  entry: ledger
+  text: Interviewed 50+ engineering candidates and redesigned the take-home exercise
+  source: user:2026-11-17
+  confirmed: false
+  tags: [software engineer]

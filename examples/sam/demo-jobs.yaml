@@ -1,0 +1,28 @@
+# Fictional jobs for `job-pipeline demo sam`. Companies and postings are invented.
+# path: the statuses a job went through. hoursAgo: when it was last touched.
+featured:
+  - { title: "Backend Engineer, Payments Platform", company: Ferrylane, location: "San Francisco, CA", workMode: hybrid, salaryMin: 185000, salaryMax: 225000, currency: USD, path: [drafted], fit: 91, hoursAgo: 3, reasons: [title matches backend engineer, 3 office days ok, pay above ask],
+      cover: "Hi Ferrylane team,\n\nI build payout systems today: the service I wrote at Ledgerly moves $40M a month for 3,000 merchants…" }
+  - { title: "Software Engineer, Developer Tools", company: Quillstack, location: "Remote (US)", workMode: remote, salaryMin: 170000, salaryMax: 210000, currency: USD, path: [drafted], fit: 88, hoursAgo: 5, reasons: [title matches software engineer, remote] }
+  - { title: Platform Engineer, company: Harborlight, location: "Oakland, CA", workMode: hybrid, salaryMin: 175000, salaryMax: 205000, currency: USD, path: [drafted], fit: 86, hoursAgo: 19, reasons: [title matches platform engineer, 3 office days ok] }
+  - { title: "Full Stack Engineer, Growth", company: Plumtree Health, location: "San Francisco, CA", workMode: onsite, salaryMin: 165000, salaryMax: 200000, currency: USD, path: [drafted], fit: 83, hoursAgo: 20, reasons: [title matches full stack engineer] }
+  - { title: "Senior Software Engineer, Infrastructure", company: Copperline AI, location: "Palo Alto, CA", workMode: hybrid, salaryMin: 210000, salaryMax: 260000, currency: USD, path: [drafted], fit: 81, hoursAgo: 26, reasons: [title matches software engineer, 2 office days ok] }
+  - { title: "Backend Engineer, Search", company: Tessellate, location: "Remote (North America)", workMode: remote, path: [drafted], fit: 79, hoursAgo: 49, reasons: [title matches backend engineer, remote] }
+  - { title: "Software Engineer, API", company: Bramble Robotics, location: "South San Francisco, CA", workMode: onsite, salaryMin: 160000, salaryMax: 195000, currency: USD, path: [drafted], fit: 76, hoursAgo: 75, reasons: [title matches software engineer] }
+  - { title: "Backend Engineer, Ledger", company: Northstar Bank, location: "San Francisco, CA", workMode: hybrid, salaryMin: 180000, salaryMax: 215000, currency: USD, path: [drafted, approved, applied, interview], fit: 90, hoursAgo: 30, reasons: [title matches backend engineer] }
+  - { title: "Software Engineer, Core Product", company: Lumen Notes, location: "Remote (US)", workMode: remote, salaryMin: 175000, salaryMax: 205000, currency: USD, path: [drafted, approved, applied, interview, offer], fit: 87, hoursAgo: 8, reasons: [title matches software engineer] }
+  - { title: "Platform Engineer, Kubernetes", company: Gridwise Energy, location: "Berkeley, CA", workMode: hybrid, path: [drafted, approved, applied, conversation], fit: 82, hoursAgo: 52, reasons: [title matches platform engineer] }
+  - { title: "Software Engineer, Risk", company: Northstar Bank, location: "San Francisco, CA", workMode: hybrid, path: [parked], fit: 0, hoursAgo: 40, reasons: [], note: "one role per company, already interviewing" }
+  - { title: Staff Engineer, company: Orbitwell, location: "San Francisco, CA", workMode: hybrid, path: [dropped], fit: 0, hoursAgo: 96, reasons: [], note: "title excluded by pattern \\bstaff\\b" }
+  - { title: Backend Engineer (EU), company: Fjordbyte, location: "Remote (EMEA)", workMode: remote, path: [dropped], fit: 0, hoursAgo: 98, reasons: [], note: "remote, but not from US" }
+
+# Background volume so the numbers look like a real search.
+bulk:
+  companies: [Aperture Labs, Brightwave, Cobalt Systems, Driftwood, Ember Analytics, Foxglove, Glasswing, Halcyon, Inkwell, Juniper Data, Kestrel Cloud, Lattice Works, Marigold, Nimbus Health, Oakmont, Pinecone Pay, Quasar, Redwood Labs, Saltwater, Tidewell, Upland, Vantage Point, Willow Robotics, Xylem Tools, Yarrow, Zephyr AI, Alder Security, Basalt, Cinder, Dovetail]
+  titles: [Software Engineer, Backend Engineer, Full Stack Engineer, Platform Engineer]
+  places:
+    - { location: "San Francisco, CA", workMode: hybrid }
+    - { location: "Remote (US)", workMode: remote }
+    - { location: "Oakland, CA", workMode: hybrid }
+    - { location: "Mountain View, CA", workMode: hybrid }
+  counts: { new: 9, applied: 34, rejected: 11 }

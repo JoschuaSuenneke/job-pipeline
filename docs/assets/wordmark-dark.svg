@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="300" height="56" viewBox="0 0 300 56" role="img" aria-label="job-pipeline">
+  <g fill="none" stroke="#e8ebf0" stroke-width="3.5" stroke-linecap="round">
+    <path d="M6 16h26M6 28h18M6 40h10"/>
+    <circle cx="40" cy="34" r="7" stroke="#7ea6ff"/>
+  </g>
+  <text x="60" y="38" font-family="ui-sans-serif, -apple-system, 'Segoe UI', Helvetica, Arial, sans-serif" font-size="28" font-weight="700" fill="#e8ebf0" letter-spacing="-0.5">job-pipeline</text>
+</svg>

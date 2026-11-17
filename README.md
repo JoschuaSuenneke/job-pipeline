@@ -78,4 +78,8 @@ There are two complete examples: [`examples/sam`](examples/sam) (San Francisco) 
 
 It's built to send fewer applications that fit well, not as many as possible. Jobs come only from official sources: public APIs and company career pages. Your data stays on your machine.
 
+## Similar projects
+
+[career-ops](https://github.com/career-ops-hq/career-ops)
+
 [MIT](LICENSE) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)

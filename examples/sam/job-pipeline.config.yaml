@@ -1,0 +1,38 @@
+# Example workspace for a fictional candidate in San Francisco. Copy to ~/.job-pipeline and edit, or run `job-pipeline init`.
+version: 1
+candidate:
+  name: Sam Rivera
+  email: sam@example.com
+  phone: "+1 415 555 0100"
+  home: San Francisco
+  country: US
+  workAuthorization: US citizen, no sponsorship needed
+  languages:
+    - { code: en, level: native }
+    - { code: es, level: C1 }
+targets:
+  roles: [software engineer, backend engineer, full stack engineer, platform engineer]
+  keywords: [typescript, distributed systems, developer tools]
+  seniority: [mid, senior]
+  excludeTitlePatterns: ["\\bmanager\\b", "\\bstaff\\b", "\\bprincipal\\b", "clearance"]
+  maxYearsRequired: 7
+location:
+  remoteCountries: [US]
+  tiers:
+    - { label: city, places: [San Francisco, SoMa, Mission Bay], maxOfficeDays: 5 }
+    - { label: bay area, places: [Oakland, Berkeley, Emeryville, South San Francisco], maxOfficeDays: 3 }
+    - { label: peninsula, places: [Palo Alto, Menlo Park, Mountain View, San Mateo], maxOfficeDays: 2 }
+compensation: { currency: USD, floor: 165000, ask: 195000, preferFixed: true }
+rules:
+  blocklist: [Example Ads Inc]
+  oneRolePerCompany: true
+  dailyApplicationLimit: 10
+  consents: { privacy: true, talentPool: true, termsOfUse: false, backgroundCheck: true, recording: false }
+  emailDrafts: true
+sources:
+  enabled: [ats, remote-boards]
+  companies:
+    - { name: Example Cloud, ats: greenhouse, slug: example-cloud }
+documents: { cvTemplate: clean, cvLanguages: [en], coverLetterMaxWords: 180 }
+mail: { provider: none, fileConfirmations: false, folder: Job Pipeline }
+agent: { drivers: [claude, codex] }

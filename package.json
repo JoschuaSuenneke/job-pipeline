@@ -1,0 +1,34 @@
+{
+  "name": "job-pipeline",
+  "version": "0.1.0",
+  "description": "AI-native, local-first job search pipeline. A Claude Code or Codex session is the driver; the code keeps the data, the rules and the integrations honest.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "job-pipeline": "./src/cli/index.ts" },
+  "files": ["src", "templates", "agents", "README.md", "LICENSE"],
+  "engines": { "bun": ">=1.2" },
+  "scripts": {
+    "jp": "bun src/cli/index.ts",
+    "dashboard": "bun src/cli/index.ts dashboard",
+    "mcp": "bun src/mcp/server.ts",
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "lint": "biome check .",
+    "format": "biome format --write ."
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "hono": "^4.13.19",
+    "imapflow": "^2.12.1",
+    "mailparser": "^3.14.5",
+    "yaml": "^2.9.1",
+    "zod": "^4.6.7"
+  },
+  "optionalDependencies": {},
+  "devDependencies": {
+    "@biomejs/biome": "^2.6.8",
+    "@types/bun": "^1.4.4",
+    "@types/mailparser": "^3.9.0",
+    "typescript": "^7.0.2"
+  }
+}

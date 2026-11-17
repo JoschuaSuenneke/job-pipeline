@@ -1,0 +1,37 @@
+# Example workspace for a fictional candidate. Copy to ~/.job-pipeline and edit, or run `job-pipeline init`.
+version: 1
+candidate:
+  name: Erika Mustermann
+  email: erika@example.com
+  phone: "+49 170 0000000"
+  home: Münster
+  country: DE
+  languages:
+    - { code: de, level: native }
+    - { code: en, level: C1 }
+targets:
+  roles: [product owner, product manager, business analyst, customer success manager]
+  keywords: [product discovery, process automation, user research]
+  seniority: [junior, mid]
+  excludeTitlePatterns: ["\\bSAP\\b", "developer", "engineer"]
+  maxYearsRequired: 5
+location:
+  remoteCountries: [Germany, DE, Deutschland]
+  tiers:
+    - { label: daily commute, places: [Münster, Osnabrück, Dortmund], maxOfficeDays: 5 }
+    - { label: hybrid, places: [Köln, Düsseldorf, Bremen], maxOfficeDays: 2 }
+    - { label: occasional, places: [Berlin, Hamburg, Amsterdam], maxOfficeDays: 1 }
+compensation: { currency: EUR, floor: 60000, ask: 70000, preferFixed: true }
+rules:
+  blocklist: [Example Bank Group]
+  oneRolePerCompany: true
+  dailyApplicationLimit: 15
+  consents: { privacy: true, talentPool: true, termsOfUse: false, backgroundCheck: false, recording: false }
+  emailDrafts: true
+sources:
+  enabled: [ats, arbeitsagentur, remote-boards]
+  companies:
+    - { name: Example SaaS, ats: ashby, slug: example-saas }
+documents: { cvTemplate: clean, cvLanguages: [en, de], coverLetterMaxWords: 220 }
+mail: { provider: none, fileConfirmations: false, folder: Job Pipeline }
+agent: { drivers: [claude, codex] }

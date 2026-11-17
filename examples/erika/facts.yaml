@@ -1,0 +1,83 @@
+# Every claim in a CV, cover note or form answer must trace to a confirmed fact.
+# Experience entries: one "header" fact ("Title | Organisation | Period | Location") plus one fact per bullet.
+- id: acme-header
+  section: experience
+  entry: acme
+  text: Product Owner | Acme Logistics GmbH | 04/2022 – today | Münster
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: acme-discovery
+  section: experience
+  entry: acme
+  text: Ran 40+ customer interviews and turned the findings into a prioritised backlog for a team of 6 engineers
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [product owner, product manager, user research, product discovery]
+- id: acme-automation
+  section: experience
+  entry: acme
+  text: Automated the returns process with n8n and cut manual handling time per case from 12 to 4 minutes
+  source: user:2026-11-17
+  confirmed: true
+  tags: [process automation, business analyst, n8n]
+- id: acme-onboarding
+  section: experience
+  entry: acme
+  text: Redesigned customer onboarding and raised 30-day activation from 41% to 58%
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [customer success manager, product manager, activation]
+- id: beta-header
+  section: experience
+  entry: beta
+  text: Business Analyst | Beta Insurance AG | 09/2019 – 03/2022 | Köln
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: beta-requirements
+  section: experience
+  entry: beta
+  text: Wrote requirements and BPMN process models for a claims platform used by 15 departments
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [business analyst, requirements, bpmn]
+- id: beta-dashboards
+  section: experience
+  entry: beta
+  text: Built Power BI dashboards that replaced 20 weekly Excel reports
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [business analyst, power bi, reporting]
+- id: edu-header
+  section: education
+  entry: uni
+  text: B.Sc. Business Informatics | University of Münster | 2015 – 2019
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [header]
+- id: skill-tools
+  section: skill
+  text: Jira, Confluence, n8n, Power BI, SQL (basic)
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [jira, n8n, power bi, sql]
+- id: skill-methods
+  section: skill
+  text: Scrum, user story mapping, BPMN
+  source: cv:resume.pdf
+  confirmed: true
+  tags: [scrum, bpmn]
+- id: salary-answer
+  section: answer
+  text: Salary expectation 70,000 EUR gross per year; start 01.02.2027; notice period 3 months
+  source: user:2026-11-17
+  confirmed: true
+  tags: [salary, notice]
+- id: unconfirmed-claim
+  section: achievement
+  entry: acme
+  text: Led a team of 12
+  source: cv:old-draft
+  confirmed: false
+  tags: [leadership]

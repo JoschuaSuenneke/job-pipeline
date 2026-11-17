@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="{{lang}}">
+<head>
+<meta charset="utf-8">
+<title>{{title}}</title>
+<style>
+  /* Clean, ATS-friendly single column. No photo, no tables for layout, real text only. */
+  @page { size: A4; margin: 16mm 18mm; }
+  :root { --ink: #1a1d23; --muted: #5a606b; --rule: #d7dbe2; }
+  * { box-sizing: border-box; }
+  body { margin: 0; color: var(--ink); font: 10.5pt/1.45 "Helvetica Neue", Arial, sans-serif; }
+  main { max-width: 180mm; margin: 0 auto; padding: 8mm 0; }
+  h1 { font-size: 20pt; margin: 0 0 2mm; letter-spacing: 0.01em; }
+  .contact { color: var(--muted); margin: 0 0 6mm; }
+  .contact span + span::before { content: " · "; }
+  h2 { font-size: 10pt; text-transform: uppercase; letter-spacing: 0.08em; color: var(--muted);
+       border-bottom: 1px solid var(--rule); padding-bottom: 1mm; margin: 6mm 0 3mm; }
+  .entry { margin: 0 0 4mm; break-inside: avoid; }
+  .entry-head { display: flex; justify-content: space-between; gap: 6mm; }
+  .entry-title { font-weight: 600; }
+  .entry-meta { color: var(--muted); white-space: nowrap; }
+  ul { margin: 1.5mm 0 0; padding-left: 5mm; }
+  li { margin: 0 0 1mm; }
+  .inline-list { margin: 0; }
+  @media print { main { padding: 0; } }
+</style>
+</head>
+<body>
+<main>
+{{body}}
+</main>
+</body>
+</html>

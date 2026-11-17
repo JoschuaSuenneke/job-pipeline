@@ -139,7 +139,9 @@ describe("sync", () => {
 
   test("matches by company name in sender or subject", () => {
     const jobs = [{ id: 1, company: "Hollerith Software Group", title: "Product Owner" }] as never;
-    expect(matchJob(msg({ fromName: "Hollerith Software Group", subject: "Bewerbung" }), jobs)).not.toBeNull();
+    expect(
+      matchJob(msg({ fromName: "Hollerith Software Group", subject: "Bewerbung" }), jobs),
+    ).not.toBeNull();
     expect(matchJob(msg({ fromName: "Other", subject: "Hello" }), jobs)).toBeNull();
   });
 

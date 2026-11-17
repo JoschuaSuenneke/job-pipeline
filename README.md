@@ -81,8 +81,4 @@ There are two complete examples: [`examples/sam`](examples/sam) (San Francisco) 
 
 It's built to send fewer applications that fit well, not as many as possible. Jobs come only from official sources: public APIs and company career pages. Your data stays on your machine.
 
-## Credits
-
-Inspired by [career-ops](https://github.com/career-ops-hq/career-ops) by Santiago Fernández de Valderrama (MIT). job-pipeline is an independent implementation.
-
 [MIT](LICENSE) · [Contributing](CONTRIBUTING.md) · [Security](SECURITY.md)
